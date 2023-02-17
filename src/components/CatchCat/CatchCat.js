@@ -4,15 +4,17 @@ import catImg from '../../images/cat.png'
 import Result from '../Result/Result';
 
 function CatchCat(props) {
+  const maxTime = 30;
   const [list, setList] = useState([true, true, true, true, true, true, true, true, true, true, true, true]);
   const [score, setScore] = useState(0);
   const [speed, setSpeed] = useState(1500);
   const [isStarted, setIsStarted] = useState(false);
   const [startBtnClass, setStartBtnClass] = useState('catch-cat__start-btn');
   const [startBtnText, setStartBtnText] = useState('Старт');
-  const [leftTime, setLeftTime] = useState(45);
+  const [leftTime, setLeftTime] = useState(maxTime);
   const [isResultVisible, setIsResultVisible] = useState(false);
   const [result, setResult] = useState(0);
+  const [record, setRecord] = useState(0);
 
   function handleCatchCat() {
     setScore(score + 1);
@@ -24,7 +26,7 @@ function CatchCat(props) {
     setIsStarted(true);
     setStartBtnClass('catch-cat__btn');
     setStartBtnText('Стоп');
-    setLeftTime(45);
+    setLeftTime(maxTime);
     setIsResultVisible(false);
   }
 
@@ -33,10 +35,14 @@ function CatchCat(props) {
     setStartBtnClass('catch-cat__start-btn');
     setStartBtnText('Старт');
     setList([true, true, true, true, true, true, true, true, true, true, true, true]);
-    setLeftTime(45);
+    setLeftTime(maxTime);
     setSpeed(1500);
     setResult(score);
     setIsResultVisible(true);
+    if (score >= record) {
+      localStorage.setItem('CatCatchRecord', score);
+      setRecord(score)
+    }
     setScore(0);
   }
 
@@ -45,7 +51,10 @@ function CatchCat(props) {
   }
 
   React.useEffect(() => {
-  }, [score]);
+    if (localStorage.getItem('CatCatchRecord')) {
+      setRecord(localStorage.getItem('CatCatchRecord'));
+    } else localStorage.setItem('CatCatchRecord', 0);
+  }, []);
 
   React.useEffect(() => {
     if (leftTime === 0) {
@@ -101,7 +110,7 @@ function CatchCat(props) {
             </li>)
         })
       }
-      <Result isVisible={isResultVisible} img={catImg} alt="Кот!" text={`котик пойман ${result} раз`} />
+      <Result isVisible={isResultVisible} img={catImg} alt="Кот!" record={record} text={`котик пойман ${result} раз(а)`} />
     </ul>
   )
 }
