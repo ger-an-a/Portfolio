@@ -1,10 +1,30 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.9a2139ce.js",
+    "main.css": "/portfolio/static/css/main.0e107c84.css",
+    "main.js": "/portfolio/static/js/main.f984030e.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/cat.png": "/portfolio/static/media/cat.9d8be97fcefc2d7fd6e4.png",
+    "static/media/mesto-full.PNG": "/portfolio/static/media/mesto-full.c457ac5e9eac60bcbd3c.PNG",
+    "static/media/mesto.PNG": "/portfolio/static/media/mesto.cfb12c46521ca193f370.PNG",
+    "static/media/russian-travel.PNG": "/portfolio/static/media/russian-travel.1e58b5fdef70d651efb3.PNG",
+    "static/media/technolab.PNG": "/portfolio/static/media/technolab.c4b5c4324a2412b57e39.PNG",
+    "static/media/diploma.PNG": "/portfolio/static/media/diploma.70028518f39cfb53ccd6.PNG",
+    "static/media/technolab-new.PNG": "/portfolio/static/media/technolab-new.cd767a418a8bf4073131.PNG",
+    "static/media/github.PNG": "/portfolio/static/media/github.62f893b4b004d66a13f7.PNG",
+    "static/media/animation.PNG": "/portfolio/static/media/animation.461e87539804badddad6.PNG",
+    "static/media/catch-cat.PNG": "/portfolio/static/media/catch-cat.60cde612cb77f2a412c8.PNG",
+    "static/media/mail.PNG": "/portfolio/static/media/mail.b832a6f0190100563b9e.PNG",
+    "static/media/resume.PNG": "/portfolio/static/media/resume.f5d67128d70cc07894d0.PNG",
+    "static/media/mesto-auth.PNG": "/portfolio/static/media/mesto-auth.ab5c54291a3d57bd2e12.PNG",
+    "static/media/logo-light.svg": "/portfolio/static/media/logo-light.3bfc9fe1416319e4a9046c79cd42ca11.svg",
+    "static/media/logo.svg": "/portfolio/static/media/logo.a1b6b4596ea9a59629ceb7d3793a387f.svg",
     "index.html": "/portfolio/index.html",
-    "main.9a2139ce.js.map": "/portfolio/static/js/main.9a2139ce.js.map"
+    "main.0e107c84.css.map": "/portfolio/static/css/main.0e107c84.css.map",
+    "main.f984030e.js.map": "/portfolio/static/js/main.f984030e.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.9a2139ce.js"
+    "static/css/main.0e107c84.css",
+    "static/js/main.f984030e.js"
   ]
 }
