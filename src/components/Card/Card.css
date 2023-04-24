@@ -14,6 +14,14 @@
   transition: box-shadow .3s linear, background-size .3s linear;
 }
 
+.card_project_rogue {
+  background-image: url(../../images/projects/rogue.PNG);
+}
+
+.card_project_cat-game {
+  background-image: url(../../images/projects/cat-game.PNG);
+}
+
 .card_project_animation {
   background-image: url(../../images/projects/animation.PNG);
 }

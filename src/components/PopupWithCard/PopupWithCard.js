@@ -8,7 +8,7 @@ function PopupWithCard(props) {
         <img className="popup__img" src={props.cardData.img} alt={`Изображение проекта ${props.cardData.title}`} />
         <p className="popup__about">{props.cardData.about}</p>
         <p className="popup__stack">{props.cardData.stack}</p>
-        <a className={`link popup__link popup__link_theme_${props.theme} popup__link_type_project`} href={props.cardData.link} target="_blank" rel="noreferrer">Посмотреть проект</a>
+        <a onClick={props.cardData.target ? props.closePopup : ''} className={`link popup__link popup__link_theme_${props.theme} popup__link_type_project`} href={props.cardData.link} target={props.cardData.target ? props.cardData.target : '__blank'} rel="noreferrer">Посмотреть проект</a>
         <a className="link popup__link popup__link_type_repository" href={props.cardData.repository} target="_blank" rel="noreferrer">Открыть репозиторий</a>
       </>
     } />

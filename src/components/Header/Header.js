@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import headerLogo from '../../images/logo.svg';
 import headerLogoLight from '../../images/logo-light.svg';
@@ -9,9 +8,9 @@ function Header(props) {
   return (
     <header className={`header header_theme_${props.theme}`}>
       <div className="header__container">
-        <Link to="/main" className="link">
-          <img src={props.theme === 'light' ? headerLogoLight : headerLogo} alt="Логотип Экзамен-Технолаб." className="header__logo" />
-        </Link>
+        <a href="#" className="link">
+          <img src={props.theme === 'light' ? headerLogoLight : headerLogo} alt="Логотип." className="header__logo" />
+        </a>
         <Navbar theme={props.theme} />
         <button onClick={props.onBtnClick} className={`link header__btn header__btn_theme_${props.theme}`}>Тема</button>
       </div>
