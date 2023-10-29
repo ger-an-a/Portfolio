@@ -12,7 +12,7 @@ function Contacts() {
           <ContactLink link="https://github.com/ger-an-a/" text="Ссылка на github" type="github" />
         </li>
         <li>
-          <ContactLink link="https://hh.ru/applicant/resumes/view?resume=7be9cb9bff086977d80039ed1f77663947416e" text="Ссылка на резюме" type="resume" />
+          <ContactLink link="https://hh.ru/resume/7be9cb9bff086977d80039ed1f77663947416e" text="Ссылка на резюме" type="resume" />
         </li>
       </ul>
     </section>

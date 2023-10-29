@@ -1,5 +1,4 @@
 import technolabNew from '../images/projects/technolab-new.PNG';
-import technolab from '../images/projects/technolab.PNG';
 import diploma from '../images/projects/diploma.PNG';
 import mestoFull from '../images/projects/mesto-full.PNG';
 import mestoAuth from '../images/projects/mesto-auth.PNG';
@@ -8,6 +7,7 @@ import russianTravel from '../images/projects/russian-travel.PNG';
 import animation from '../images/projects/animation.PNG';
 import rogue from '../images/projects/rogue.PNG';
 import catGame from '../images/projects/cat-game.PNG';
+import shorter from '../images/projects/shorter.PNG';
 
 
 const projects = [
@@ -15,10 +15,19 @@ const projects = [
     img: technolabNew,
     project: 'technolab-new',
     title: 'Сайт компании "Экзамен-Технолаб".',
-    about: 'Сайт компании по новому дизайну. Имеется каталог и карточки товаров, фильтрация в каталоге и раздел "обучение". Сайт еще в разработке.',
+    about: 'Сайт компании по новому дизайну с API. Имеется каталог и карточки товаров, фильтрация в разделе "обучение". Сайт еще в разработке. Планируется добавить админскую часть с возможностью редактировать карточки товаров.',
     link: 'https://examen-technolab.ru/main',
     repository: 'https://github.com/ger-an-a/technolab-new',
-    stack: 'HTML, CSS, JavaScript, React',
+    stack: 'HTML, CSS, JavaScript, React, PHP, MySQL',
+  },
+  {
+    img: shorter,
+    project: 'shorter',
+    title: 'Cервис для сокращения URL (Тестовое задание).',
+    about: 'С помощью данного сервиса можно сгенерировать короткое представление заданного URL, создать кастомную ссылку, перейти по сохраненному ранее короткому представлению на соответствующий исходный URL',
+    link: 'http://f0874589.xsph.ru/frontend/',
+    repository: 'https://github.com/ger-an-a/url-short',
+    stack: 'HTML, CSS, JavaScript, PHP, MySQL',
   },
   {
     img: rogue,
@@ -43,25 +52,16 @@ const projects = [
     img: diploma,
     project: 'diploma',
     title: 'Дипломный проект. Сервис поиска фильмов.',
-    about: 'Данный сервис позволяет искать и сохранять фильмы в свой аккаунт. Имеется фильтрация и сохранение параметров последнего поиска, валидация всех форм. Для регистрации, авторизации и изменения данных пользователя был написан API.',
+    about: 'Данный сервис позволяет искать и сохранять фильмы в свой аккаунт. Имеется фильтрация и сохранение параметров последнего поиска, валидация всех форм. Для регистрации, авторизации и изменения данных пользователя был написан API. На данный момент сервис не размещен!',
     link: 'https://movies-ger.nomoredomains.club/#techs',
     repository: 'https://github.com/ger-an-a/movies-explorer-frontend',
     stack: 'HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB',
   },
   {
-    img: technolab,
-    project: 'technolab',
-    title: 'Сайт компании "Экзамен-Технолаб". Старый.',
-    about: 'Сайт свёрстан по макетам дизайнера. Главная страница интерактивная, имеется каталог и карточки товаров. Это старая версия, размещенная на gh-pages, поэтому невозможен роутинг через адресную строку. При переходе по ссылке откроется пустая страница с меню. Необходимо кликнуть пункт меню "главная" для просмотра сайта.',
-    link: 'https://ger-an-a.github.io/Technolab/',
-    repository: 'https://github.com/ger-an-a/Technolab',
-    stack: 'HTML, CSS, JavaScript, React',
-  },
-  {
     img: mestoFull,
     project: 'mesto-full',
     title: 'Учебный проект mesto. Фронтенд и бэкенд.',
-    about: 'Приложение имеет следующие возможности: авторизация и регистрация пользователей, добавление и удаление карточек и лайков, изменение данных пользователя. Для работы приложения был написан API',
+    about: 'Приложение имеет следующие возможности: авторизация и регистрация пользователей, добавление и удаление карточек и лайков, изменение данных пользователя. Для работы приложения был написан API. На данный момент сервис не размещен!',
     link: 'https://mesto-ger.nomoredomains.club/',
     repository: 'https://github.com/ger-an-a/react-mesto-api-full',
     stack: 'HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB',

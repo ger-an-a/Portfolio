@@ -1,7 +1,7 @@
 import CatchCat from "../CatchCat/CatchCat";
 
 function Skills(props) {
-  const skillsList = ['HTML', 'CSS', 'БЭМ', 'JS', 'React', 'Git', 'Node.js', 'Express.js', 'mongoDB', 'Nginx', 'PM2'];
+  const skillsList = ['HTML', 'CSS', 'БЭМ', 'JS', 'TS', 'React', 'SQL', 'PHP', 'mySQL', 'Git', 'Node.js', 'Express.js', 'mongoDB', 'Nginx', 'PM2'];
 
   return (
     <section id="skills" className={`skills skills_theme_${props.theme}`}>
