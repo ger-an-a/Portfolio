@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d1934055.css",
-    "main.js": "/portfolio/static/js/main.b0d69247.js",
+    "main.css": "/portfolio/static/css/main.3ff7f2c1.css",
+    "main.js": "/portfolio/static/js/main.d354869e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/cat.png": "/portfolio/static/media/cat.9d8be97fcefc2d7fd6e4.png",
+    "static/media/cats.PNG": "/portfolio/static/media/cats.b0aa100a69c626dbfcf5.PNG",
     "static/media/technolab-new.PNG": "/portfolio/static/media/technolab-new.86110dd4953fcf9094d4.PNG",
     "static/media/mesto-full.PNG": "/portfolio/static/media/mesto-full.c457ac5e9eac60bcbd3c.PNG",
     "static/media/mesto.PNG": "/portfolio/static/media/mesto.cfb12c46521ca193f370.PNG",
@@ -24,12 +25,12 @@
     "static/media/logo-light.svg": "/portfolio/static/media/logo-light.3bfc9fe1416319e4a9046c79cd42ca11.svg",
     "static/media/logo.svg": "/portfolio/static/media/logo.a1b6b4596ea9a59629ceb7d3793a387f.svg",
     "index.html": "/portfolio/index.html",
-    "main.d1934055.css.map": "/portfolio/static/css/main.d1934055.css.map",
-    "main.b0d69247.js.map": "/portfolio/static/js/main.b0d69247.js.map",
+    "main.3ff7f2c1.css.map": "/portfolio/static/css/main.3ff7f2c1.css.map",
+    "main.d354869e.js.map": "/portfolio/static/js/main.d354869e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1934055.css",
-    "static/js/main.b0d69247.js"
+    "static/css/main.3ff7f2c1.css",
+    "static/js/main.d354869e.js"
   ]
 }
