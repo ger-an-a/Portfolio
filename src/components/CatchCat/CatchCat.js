@@ -5,24 +5,28 @@ import Result from '../Result/Result';
 
 function CatchCat(props) {
   const maxTime = 30;
-  const [list, setList] = useState([true, true, true, true, true, true, true, true, true, true, true, true]);
-  const [score, setScore] = useState(0);
-  const [speed, setSpeed] = useState(1500);
-  const [isStarted, setIsStarted] = useState(false);
-  const [startBtnClass, setStartBtnClass] = useState('catch-cat__start-btn');
-  const [startBtnText, setStartBtnText] = useState('Старт');
-  const [leftTime, setLeftTime] = useState(maxTime);
-  const [isResultVisible, setIsResultVisible] = useState(false);
-  const [result, setResult] = useState(0);
-  const [record, setRecord] = useState(0);
+  const emptyList = Array(12).fill(true);
+
+  const [list, setList] = useState(emptyList); // "карта" поля
+  const [score, setScore] = useState(0); // текущий счет
+  const [speed, setSpeed] = useState(1500); //интервал смены положения котика
+  const [isStarted, setIsStarted] = useState(false); //флаг начала игры
+  const [startBtnClass, setStartBtnClass] = useState('catch-cat__start-btn'); //класс кнопки начала/остановки игры
+  const [startBtnText, setStartBtnText] = useState('Старт'); //текст кнопки начала/остановки игры
+  const [leftTime, setLeftTime] = useState(maxTime); //таймер
+  const [isResultVisible, setIsResultVisible] = useState(false); //флаг видимости результата
+  const [result, setResult] = useState(0); //результат
+  const [record, setRecord] = useState(0); //рекорд
 
   function handleCatchCat() {
+    //при клике по котику увеличиваем счет, скорость и очищаем поле
     setScore(score + 1);
-    setList([true, true, true, true, true, true, true, true, true, true, true, true]);
+    setList(emptyList);
     if (speed >= 500) setSpeed(speed - 50);
   }
 
   function startGame() {
+    //запуск игры
     setIsStarted(true);
     setStartBtnClass('catch-cat__btn');
     setStartBtnText('Стоп');
@@ -31,10 +35,11 @@ function CatchCat(props) {
   }
 
   function stopGame() {
+    //остарновка игры и запись рекорда в локальное хранилище
     setIsStarted(false);
     setStartBtnClass('catch-cat__start-btn');
     setStartBtnText('Старт');
-    setList([true, true, true, true, true, true, true, true, true, true, true, true]);
+    setList(emptyList);
     setLeftTime(maxTime);
     setSpeed(1500);
     setResult(score);
@@ -51,30 +56,40 @@ function CatchCat(props) {
   }
 
   React.useEffect(() => {
+    //при монтировании достаем из локального хранилища рекорд или записываем туда 0, если его нет
     if (localStorage.getItem('CatCatchRecord')) {
       setRecord(localStorage.getItem('CatCatchRecord'));
     } else localStorage.setItem('CatCatchRecord', 0);
   }, []);
 
   React.useEffect(() => {
+    //отслеживаем таймер: когда 0, останавливаем игру
     if (leftTime === 0) {
       stopGame();
     }
   }, [leftTime]);
 
   React.useEffect(() => {
-    if (isStarted) {
+    //при старте игры задаем случайное положение котику и меняем его через интервал, хранящийся в speed
+    //при поимке котика, т.е. при изменении интервала, удаляем старый и задаем новый.
+
+    function setRandomPlace() {
+      //задает случайное положение котику
       let i = Math.floor(Math.random() * 12);
       setList(list.map((item, index) => index === i ? item = false : true));
+    }
+
+    if (isStarted) {
+      setRandomPlace()
       const interval = setInterval(() => {
-        i = Math.floor(Math.random() * 12);
-        setList(list.map((item, index) => index === i ? item = false : true));
+        setRandomPlace()
       }, speed);
       return () => clearInterval(interval);
     }
   }, [isStarted, speed]);
 
   React.useEffect(() => {
+    //запускаем таймер при старте игры
     if (isStarted) {
       let time = 0;
       const timer = setInterval(() => {

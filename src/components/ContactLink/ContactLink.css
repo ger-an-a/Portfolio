@@ -62,6 +62,14 @@
   content: 'Перейти на github';
 }
 
+.contact-link_type_telegram {
+  background-image: url(../../images/telegram.PNG);
+}
+
+.contact-link_type_telegram:hover::after {
+  content: 'Написать в telegram';
+}
+
 .contact-link__caption {
   font-size: 14px;
   text-transform: uppercase;

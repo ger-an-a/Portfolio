@@ -1,3 +1,3 @@
-const defaultList = ['HTML', 'CSS', 'БЭМ', 'JS', 'TS', 'React', 'PHP', 'SQL', 'mySQL', 'Git', 'Node.js', 'Express.js', 'mongoDB', 'Nginx', 'PM2'];
+const skillsList = ['HTML', 'CSS', 'CSS Modules', 'БЭМ', 'JavaScript', 'TypeScript', 'React', 'MobX', 'SQL', 'PHP', 'mySQL', 'Git', 'npm', 'CRA', 'Vite', 'Node.js', 'Express.js', 'mongoDB'];
 
-export default defaultList;
+export default skillsList;

@@ -1,7 +1,8 @@
 import CatchCat from "../CatchCat/CatchCat";
+import skillsList from "../../utils/skillsLists";
+import FindCouple from "../FindCouple/FindCouple";
 
 function Skills(props) {
-  const skillsList = ['HTML', 'CSS', 'БЭМ', 'JS', 'TS', 'React', 'SQL', 'PHP', 'mySQL', 'Git', 'Node.js', 'Express.js', 'mongoDB', 'Nginx', 'PM2'];
 
   return (
     <section id="skills" className={`skills skills_theme_${props.theme}`}>
@@ -23,6 +24,7 @@ function Skills(props) {
               }
             </ul>) : <CatchCat onExitBtnClick={props.onExitBtnClick} />
         }
+        {/* <FindCouple /> */}
       </div>
     </section>
   )

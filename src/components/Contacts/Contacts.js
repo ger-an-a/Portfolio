@@ -14,6 +14,9 @@ function Contacts() {
         <li>
           <ContactLink link="https://hh.ru/resume/7be9cb9bff086977d80039ed1f77663947416e" text="Ссылка на резюме" type="resume" />
         </li>
+        <li>
+          <ContactLink link="https://t.me/cya_nastasia" text="Telegram" type="telegram" />
+        </li>
       </ul>
     </section>
   )

@@ -50,8 +50,20 @@
   background-image: url(../../images/projects/technolab.PNG);
 }
 
+.card_project_shorter {
+  background-image: url(../../images/projects/shorter.PNG);
+}
+
+.card_project_films {
+  background-image: url(../../images/projects/films.PNG);
+}
+
 .card_project_technolab-new {
   background-image: url(../../images/projects/technolab-new.PNG);
+}
+
+.card_project_cats {
+  background-image: url(../../images/projects/cats.PNG);
 }
 
 .card:hover {
